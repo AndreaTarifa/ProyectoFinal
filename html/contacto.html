@@ -1,32 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Toscana</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header>
-        <a class="logo" href="../index.html"><img src="../img/logo.png" alt=""></a>
-        <nav>
-            <ul>
-                <li><a href="carta.html"><span>Carta</span></a></li>
-                <li><a href="galeria.html"><span>Galería</span></a></li>
-                <li><a href="contacto.html"><span>Contacto</span></a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurante Toscana</title>
+        <link rel="icon" type="image/x-icon" href="/img/logo1.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://kit.fontawesome.com/497015d351.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/contact.css" />
+        <script defer src="../js/script.js"></script>
+      </head>
+
+      <body>
+        <header>
+          <div class="logo">
+            <a href="../index.html"><img src="/img/logo.png" alt="Logo" /></a>
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="carta.html">Carta</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-       
-    </main>
-    <footer></footer>
-</body>
+
+            <div class="container-menu-mobile">
+              <ul class="menu-mobile">
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+              <button class="hamburger">
+                <i class="menuIcon fa-solid fa-bars"></i>
+                <i class="closeIcon fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div class="card-contact">
+            <div class="inner-card-contact">
+              <div class="contact-info">
+                <h2>Datos de contacto</h2>
+                <div class="contact-row">
+                  <h3>Teléfono:</h3>
+                  <span>950 33 39 18</span>
+                </div>
+                <div class="contact-row">
+                  <h3>Pedidos a domicílio:</h3>
+                  <a href="https://toscanaespresso.es/" target="_blank"
+                    >Toscana espresso</a
+                  >
+                </div>
+                <div class="contact-row">
+                  <div class="icons">
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.566436952026!2d-2.6227565232888725!3d36.732972672266285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd706f85cf3fe187%3A0x5f8d7c7d8c82c3e3!2sRestaurante%20Toscana%20-%20URBA!5e0!3m2!1ses!2ses!4v1681575410883!5m2!1ses!2ses"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class="footer-left">
+            <p>
+              &copy; <span id="currentYear"></span> - Restaurante Pizzería
+              Toscana
+            </p>
+          </div>
+          <div class="footer-right">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </footer>
+      </body>
+    </html>
+  </head>
 </html>

@@ -1,0 +1,95 @@
+/* CONTACT PAGE */
+
+.card-contact {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 6px;
+  gap: 25px;
+  background-color: var(--white);
+}
+
+.inner-card-contact {
+  display: flex;
+  column-gap: 20px;
+  width: 80vw;
+}
+
+.contact-info {
+  width: 30%;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+}
+
+iframe {
+  width: 70%;
+  height: 500px;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contact-row h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+  column-gap: 10px;
+}
+
+.icons a,
+.icons a:active,
+.icons a:visited {
+  color: black;
+}
+
+.icons a i {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-info {
+    width: 45%;
+  }
+
+  iframe {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-info {
+    width: 40%;
+  }
+
+  iframe {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner-card-contact {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .contact-info {
+    width: 100%;
+    row-gap: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+}

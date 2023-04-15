@@ -1,27 +1,31 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+window.addEventListener("load", () => {
+  getYearCopy();
+  initMobileMenu();
+});
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function getYearCopy() {
+  const year = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = year;
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function initMobileMenu() {
+  const menu = document.querySelector(".menu-mobile");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger = document.querySelector(".hamburger");
+  const closeIcon = document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  
+
+  hamburger.addEventListener("click", toggleMenu);
 }

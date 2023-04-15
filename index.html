@@ -1,62 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante Toscana</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
-</head>
+    <link rel="icon" type="image/x-icon" href="/img/logo1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/497015d351.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
-        <nav>
-            <ul>
-                <li><a href="html/carta.html"><span>Carta</span></a></li>
-                <li><a href="html/galeria.html"><span>Galería</span></a></li>
-                <li><a href="html/contacto.html"><span>Contacto</span></a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <a href="index.html"><img src="/img/logo.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="html/carta.html">Carta</a></li>
+          <li><a href="html/galeria.html">Galería</a></li>
+          <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="container-menu-mobile">
+          <ul class="menu-mobile">
+            <li><a href="html/carta.html">Carta</a></li>
+            <li><a href="html/galeria.html">Galería</a></li>
+            <li><a href="html/contacto.html">Contacto</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon fa-solid fa-bars"></i>
+            <i class="closeIcon fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <img src="img/c1.jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="img/c2.jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="img/c3.jpg" style="width:100%">
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-
-
-        <div class="info">
-            <h1>Información</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa unde eaque perspiciatis animi reiciendis
-                aperiam, similique nulla, inventore neque blanditiis, temporibus commodi velit quidem. Tenetur dolorem
-                sed blanditiis optio quisquam.</p>
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="img/c1.jpg" alt="Image 1" />
         </div>
-
+        <div class="slide fade">
+          <img src="img/c2.jpg" alt="Image 2" />
+        </div>
+        <div class="slide fade">
+          <img src="img/c3.jpg" alt="Image 3" />
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      <div class="card about-us">
+        <h1>Sobre nosotros</h1>
+        <p>
+          Degusta los mejores platos de la gastronomía Italiana y Mediterránea
+          en Restaurante Toscana.
+        </p>
+        <p>
+          Nos encontramos en el Centro Comercial Andaluz de Roquetas de Mar. Te
+          proponemos especialidades mediterráneas para que disfrutes del buen
+          comer.
+        </p>
+        <p>
+          Entre nuestra carta encontrarás las pizzas artesanas clásicas
+          italianas o los platos de pasta fresca, así como delicias españolas de
+          carne y pescado. Disfruta del auténtico sabor de La Toscana en plena
+          costa de Almería. Restaurante Toscana nació en 1975.
+        </p>
+      </div>
     </main>
-    <footer></footer>
-</body>
-
+    <footer>
+      <div class="footer-left">
+        <p>
+          &copy; <span id="currentYear"></span> - Restaurante Pizzería Toscana
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/slideshow.js"></script>
+  </body>
 </html>
