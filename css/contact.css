@@ -1,3 +1,7 @@
+:root {
+  --grayish: #222222;
+}
+
 /* CONTACT PAGE */
 
 .card-contact {
@@ -50,7 +54,7 @@ iframe {
 .icons a,
 .icons a:active,
 .icons a:visited {
-  color: black;
+  color: var(--grayish);
 }
 
 .icons a i {
