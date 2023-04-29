@@ -17,12 +17,15 @@
   box-sizing: border-box;
 }
 
+/* Quita los estilos a las listas */
 ol,
 ul {
   list-style: none;
 }
 
 /* BODY STYLES */
+
+/* Añade un color de texto, de fondo y establece una altura a los elementos body y html */
 html,
 body {
   height: auto;
@@ -30,10 +33,12 @@ body {
   color: var(--grayish);
 }
 
+/* Establece la fuente Roboto para el body */
 body {
   font-family: "Roboto";
 }
 
+/* Da tamaño, peso de fuente, alineación y anchura a los elementos h1 */
 h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -41,6 +46,8 @@ h1 {
   width: 100%;
 }
 
+/* Da altura, alineación, dirección de los elementos, padding 
+y separación de las filas al elemento main */
 main {
   min-height: calc(100vh - 180px);
   display: flex;
@@ -51,6 +58,8 @@ main {
 }
 
 /* HEADER CSS */
+
+/* Da un color de fondo, sombra, alineación, posición, altura, anchura al header */
 header {
   background-color: var(--white);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -65,27 +74,34 @@ header {
   z-index: 999;
 }
 
+/* Da altura al logo del header */
 .logo img {
   height: 80px;
 }
 
+/* Da altura al nav */
 nav {
   display: flex;
   height: 100%;
 }
 
+/* Da altura y alineación vertical al contenedor 
+de los links de navegación */
 .nav-links {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
+/* Da alineación vertical y altura a los li del nav */
 .nav-links li {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
+/* Da color, tamaño de la fuente, alineación vertical, altura, 
+texto en mayúsculas de los enlaces del nav */
 .nav-links a {
   color: var(--grayish);
   text-decoration: none;
@@ -99,15 +115,19 @@ nav {
   align-items: center;
 }
 
+/* Cambia el color de fondo del li en hover */
 .nav-links li:hover {
   background-color: var(--granate);
 }
 
+/* Cambia el color del texto de los a cuando se hace hover en los li */
 .nav-links li:hover a {
   color: var(--white);
 }
 
 /* MOBILE MENU */
+
+/* Icono del menú mobile */
 .hamburger {
   z-index: 100;
   padding: 10px;
@@ -116,10 +136,13 @@ nav {
   background-color: transparent;
 }
 
+/* Establece que por defecto el contenedor del menú mobile no se muestre */
 .container-menu-mobile {
   display: none;
 }
 
+/* Posiciona el menú mobile, le da color de fondo y una 
+transición vertical para cuando se muestre */
 .menu-mobile {
   position: fixed;
   transform: translateY(-100%);
@@ -136,27 +159,34 @@ nav {
   padding-top: 4rem;
 }
 
+/* Da alineación al texto, tamaño de la fuente y un margin 
+bottom a los li del menú mobile */
 .menu-mobile li {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
+/* Le quita la decoración del texto y cambia el color a los a del menú mobile */
 .menu-mobile li a {
   text-decoration: none;
   color: var(--white);
 }
 
+/* Hace que el icono de cerrar no se muestre por defecto y le cambia el color */
 .closeIcon {
   display: none;
   color: var(--white);
 }
 
+/* Posicióna verticalmente al inicio */
 .showMenu {
   transform: translateY(0);
 }
 
 /* FOOTER CSS */
+
+/* Da color de texto y fondo, altura, alineación y separación del contenido al footer */
 footer {
   background-color: var(--grayish);
   color: var(--white);
@@ -167,38 +197,48 @@ footer {
   padding: 0 50px;
 }
 
+/* Cambia el tamaño de la letra al contenedor izquierdo del footer */
 .footer-left {
   font-size: 16px;
 }
 
+/* Quita el margen a los elementos p dentro del conteendor footer-left */
 .footer-left p {
   margin: 0;
 }
 
+/* Aplica flex al contenedor derecho del footer */
 .footer-right {
   display: flex;
 }
 
+/* Añade margen izquierdo a los elementos a dentro del contendor footer-right */
 .footer-right a {
   margin-left: 20px;
 }
 
+/* Cambia el tamaño y color de los iconos dentro del contenedor footer right */
 .footer-right a i {
   font-size: 24px;
   color: var(--white);
 }
 
 /* CARRUSEL */
+
+/* Contenedor del carrusel con una anchura máxima */
 .slideshow-container {
   position: relative;
   max-width: 90%;
 }
 
+/* Clase por defecto para la imagen del carrousel donde hace que no se muestre */
 .slide {
   position: relative;
   display: none;
 }
 
+/* Posiciona absoultamente, le da color de fondo, alineación del texto, 
+color del texto, tamaño de la fuente al texto que sale en la imagen */
 .slide .image-info {
   position: absolute;
   height: 15%;
@@ -213,6 +253,7 @@ footer {
   bottom: 0;
 }
 
+/* Da anchura, altura, relación de aspecto a las imagenes de los slides */
 .slide img {
   width: 80vw;
   aspect-ratio: 19/10;
@@ -220,6 +261,8 @@ footer {
   height: 100%;
 }
 
+/* Posicióna absolutamente, da tamaño de la fuente, transición, color de texto,
+color de fondo, altura y anchura a los botones del carrousel */
 .prev,
 .next {
   position: absolute;
@@ -236,25 +279,29 @@ footer {
   transition: 0.3s ease;
 }
 
+/* Cambia el color de fondo de los botones del carrousel al hacer hover */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Posiciona el botón de previo 10px a la izquierda */
 .prev {
   left: 10px;
 }
 
+/* Posiciona el botón de siguiente 10px a la derecha */
 .next {
   right: 10px;
 }
 
+/* Clase de la animación de cambio de imagen del carrousel */
 .fade {
   animation-name: fade;
   animation-duration: 0.6s;
 }
 
-/* CARRUSEL ANIMATION */
+/* Animación que cambia la opacidad */
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -265,6 +312,9 @@ footer {
 }
 
 /* GENERAL CLASSES */
+
+/* Clase general que da sombra, borde redondeado, alineación del texto, 
+separación del contenido, color de fondo y separación entre elementos */
 .card {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -274,27 +324,33 @@ footer {
   background-color: var(--white);
 }
 
+/* Establece la anchura del contenedor y el tamaño de la fuente de la sección "Sobre nosostros" de la página principal */
 .about-us {
   width: 80vw;
   font-size: 1.5rem;
 }
 
+/* Añade margin bottom a todos los elementos p dentro del 
+contenedor about-us excepto si es el último elemento */
 .about-us p:not(:last-child) {
   margin-bottom: 30px;
 }
 
+/* Añade margin bottom a los elementos h1 dentro de los elementos con la clase card  */
 .card h1 {
   margin-bottom: 20px;
-  text-underline-offset: 10px;
 }
 
 /* MEDIA QUERIES */
 
+/* Media query desktop */
 @media screen and (max-width: 1200px) {
+  /* Cambia la anchura máxima de los elementos con la clase card */
   .card {
     max-width: 90%;
   }
 
+  /* Cambia la altura, anchura de las imagenes del carrousel */
   .slide img {
     width: 80vw;
     aspect-ratio: 19/10;
@@ -303,11 +359,14 @@ footer {
   }
 }
 
+/* Media query tablet */
 @media screen and (max-width: 768px) {
+  /* Cambia la anchura máxima de los elementos con la clase card */
   .card {
     max-width: 80%;
   }
 
+  /* Cambia la altura, anchura de las imagenes del carrousel */
   .slide img {
     width: 100%;
     aspect-ratio: 1;
@@ -316,49 +375,61 @@ footer {
   }
 }
 
+/* Media query mobile */
 @media screen and (max-width: 480px) {
+  /* Cambia la separación interior del contenido del header, main y footer */
   header,
   main,
   footer {
     padding: 10px;
   }
 
+  /* Cambia el tamaño de letra y alineación del texto de las imagenes del carrousel */
   .slide .image-info {
     font-size: 1rem;
     justify-content: center;
   }
 
+  /* Cambia el tamaño y alineación del texto de la sección "Sobre nosotros" */
   .about-us {
     font-size: 1.2rem;
     text-align: left;
   }
 
+  /* Modifica el margin bottom de los elementos p de 
+  la sección "Sobre nosotros" que no sean el último elemento */
   .about-us p:not(:last-child) {
     margin-bottom: 30px;
   }
 
+  /* Cambia el tamaño de la letra del contenedor footer-left */
   .footer-left {
     font-size: 14px;
   }
 
+  /* Cambia el tamaño de la letra de los elementos h1 */
   h1 {
     font-size: 2rem;
   }
 
+  /* Modifica la alineación del contenedor del menú mobile */
   .container-menu-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  /* Muestra el menú mobile */
   .menu-mobile {
     display: inline-block;
   }
 
+  /* Esconde los enlaces del menu desktop en mobile */
   .nav-links {
     display: none;
   }
 
+  /* Cambia la anchura máxima de los elementos con la clase card */
   .card {
     max-width: 100%;
   }

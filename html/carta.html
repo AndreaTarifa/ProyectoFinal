@@ -10,47 +10,62 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Título de la página -->
         <title>Restaurante Toscana</title>
+        <!-- Favicon de la página -->
         <link rel="icon" type="image/x-icon" href="/img/logo1.png" />
+        <!-- Enlaces de la fuentes Roboto y Playfair Display  -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
           rel="stylesheet"
         />
-        <script
-          src="https://kit.fontawesome.com/497015d351.js"
-          crossorigin="anonymous"
-        ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
           rel="stylesheet"
         />
+        <!-- Enlace de los iconos de FontAwesome -->
+        <script
+          src="https://kit.fontawesome.com/497015d351.js"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Enlaces CSS del menu y los estilos generales -->
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/menu.css" />
+        <!-- Enlace al JavaScript de la página -->
         <script defer src="../js/script.js"></script>
       </head>
 
       <body>
+        <!-- Cabecera de la página -->
         <header>
+          <!-- Contenedor del logo de la web con el enlace a la página principal -->
           <div class="logo">
             <a href="../index.html"><img src="/img/logo.png" alt="Logo" /></a>
           </div>
+
+          <!-- Menú de navegación -->
           <nav>
+            <!-- Links de navegación de la página web en desktop -->
             <ul class="nav-links">
               <li><a href="carta.html">Carta</a></li>
               <li><a href="galeria.html">Galería</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
 
+            <!-- Contenedor del menú de navegación mobile -->
             <div class="container-menu-mobile">
+              <!-- Links de navegación de la página web en mobile -->
               <ul class="menu-mobile">
                 <li><a href="carta.html">Carta</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
               </ul>
+
+              <!-- Botón para abrir o cerrar el menú de navegación mobile -->
               <button class="hamburger">
                 <i class="menuIcon fa-solid fa-bars"></i>
                 <i class="closeIcon fa-solid fa-xmark"></i>
@@ -58,48 +73,66 @@
             </div>
           </nav>
         </header>
+
+        <!-- Sección principal de la página -->
         <main>
+          <!-- NOTA: Este formato de HTML dentro de la sección principal de la página se repite desde la línea 74 hasta la 238 -->
+          <!-- Contenedor de una sección de los platos de la carta -->
           <div class="card inner-card">
+            <!-- Sección de información de los platos de la carta dentro del contenedor -->
             <div class="inner-card-info">
+              <!-- Título de la sección -->
               <h2>Ensaladas</h2>
+              <!-- Contenedor de las filas de los platos con su información -->
               <div class="inner-card-info-list">
+                <!-- Fila de cada plato -->
                 <div class="inner-card-info-row">
                   <p>Ensalada de pollo Hawaii</p>
                   <span>9,50€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Ensalada mixta</p>
                   <span>9,00€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Ensalada Toscana</p>
                   <span>11,00€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Ensalada de mango con frutos rojos y rulo de cabra</p>
                   <span>12,50€</span>
                 </div>
               </div>
             </div>
+            <!-- Imagen del contenedor -->
             <img src="/img/ensalada_rulo.jpg" alt="" />
           </div>
+
           <div class="card inner-card">
             <img src="/img/Alcachofas.jpg" alt="" />
+
             <div class="inner-card-info">
               <h2>Para compartir</h2>
+
               <div class="inner-card-info-list">
                 <div class="inner-card-info-row">
                   <p>Camambert frito con confitura de tomate raf</p>
                   <span>10,00€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Alcachofas a la romana con gambas y jamón ibérico</p>
                   <span>13,75€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Pimientos de piquillo rellenos de marisco (4uds)</p>
                   <span>11,60€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Provoletta a los 4 quesos con pan de pizza</p>
                   <span>11,00€</span>
@@ -107,32 +140,40 @@
               </div>
             </div>
           </div>
+
           <div class="card inner-card">
             <div class="inner-card-info">
               <h2>Pizzas artesanales</h2>
+
               <div class="inner-card-info-list">
                 <div class="inner-card-info-row">
                   <p>Especial Toscana</p>
                   <span>9,95€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Caprichosa</p>
                   <span>9,50€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Pepperoni</p>
                   <span>11,25€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Carbonara</p>
                   <span>11,50€</span>
                 </div>
               </div>
             </div>
+
             <img src="/img/peperoni.jpg" alt="" />
           </div>
+
           <div class="card inner-card">
             <img src="/img/pizza.jpg" alt="" />
+
             <div class="inner-card-info">
               <div class="inner-card-info-list">
                 <div class="inner-card-info-row">
@@ -166,39 +207,48 @@
                   <p>Tallarines a la Rabietta</p>
                   <span>12,25€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Lasaña mixta</p>
                   <span>9,25€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Panciotti de vieira y gambón del norte</p>
                   <span>12,25€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Espaguetis a la carbonara</p>
                   <span>11,50€</span>
                 </div>
               </div>
             </div>
+
             <img src="/img/Panciotti.jpg" alt="" />
           </div>
           <div class="card inner-card">
             <img src="/img/Brownie.jpg" alt="" />
+
             <div class="inner-card-info">
               <h2>Postres</h2>
+
               <div class="inner-card-info-list">
                 <div class="inner-card-info-row">
                   <p>Tiramisú</p>
                   <span>5,00€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Tarta de queso</p>
                   <span>4,50€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Tarta de oreo</p>
                   <span>4,50€</span>
                 </div>
+
                 <div class="inner-card-info-row">
                   <p>Brownie de chocolate negro con nueves</p>
                   <span>4,50€</span>
@@ -207,14 +257,21 @@
             </div>
           </div>
         </main>
+
+        <!-- Footer de la página -->
         <footer>
+          <!-- Contenedor izquierdo del footer -->
           <div class="footer-left">
+            <!-- Parágrafo con el año actual y el nombre del restaurante -->
             <p>
               &copy; <span id="currentYear"></span> - Restaurante Pizzería
               Toscana
             </p>
           </div>
+
+          <!-- Contenedor derecho del footer -->
           <div class="footer-right">
+            <!-- Enlaces e iconos de las redes sociales -->
             <a
               href="https://www.facebook.com/ToscanaES/?locale=es_ES"
               target="_blank"

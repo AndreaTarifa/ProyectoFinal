@@ -10,47 +10,62 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Título de la página -->
         <title>Restaurante Toscana</title>
+        <!-- Favicon de la página -->
         <link rel="icon" type="image/x-icon" href="/img/logo1.png" />
+        <!-- Enlaces de la fuentes Roboto y Playfair Display  -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
           rel="stylesheet"
         />
-        <script
-          src="https://kit.fontawesome.com/497015d351.js"
-          crossorigin="anonymous"
-        ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
           rel="stylesheet"
         />
+        <!-- Enlace de los iconos de FontAwesome -->
+        <script
+          src="https://kit.fontawesome.com/497015d351.js"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Enlaces CSS del menu y los estilos de la sección de la galería -->
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/gallery.css" />
+        <!-- Enlace al JavaScript de la página -->
         <script defer src="../js/script.js"></script>
       </head>
 
       <body>
+        <!-- Cabecera de la página -->
         <header>
+          <!-- Contenedor del logo de la web con el enlace a la página principal -->
           <div class="logo">
             <a href="../index.html"><img src="/img/logo.png" alt="Logo" /></a>
           </div>
+
+          <!-- Menú de navegación -->
           <nav>
+            <!-- Links de navegación de la página web en desktop -->
             <ul class="nav-links">
               <li><a href="carta.html">Carta</a></li>
               <li><a href="galeria.html">Galería</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
 
+            <!-- Contenedor del menú de navegación mobile -->
             <div class="container-menu-mobile">
+              <!-- Links de navegación de la página web en mobile -->
               <ul class="menu-mobile">
                 <li><a href="carta.html">Carta</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
               </ul>
+
+              <!-- Botón para abrir o cerrar el menú de navegación mobile -->
               <button class="hamburger">
                 <i class="menuIcon fa-solid fa-bars"></i>
                 <i class="closeIcon fa-solid fa-xmark"></i>
@@ -58,18 +73,26 @@
             </div>
           </nav>
         </header>
+
+        <!-- Sección principal de la página -->
         <main>
+          <!-- Contenedor grid de la galería -->
           <div class="grid-container">
+            <!-- NOTA: este formato HTML se repite desde la línea 84 hasta la 179 -->
+            <!-- Contenedor de la imagen -->
             <div class="image-container">
               <img
                 src="/img/sala.jpg"
                 alt="Sala principal del restaurante"
                 class="image"
               />
+
+              <!-- Contenedor del texto de la imagen que aparece al hacer hover -->
               <div class="overlay">
                 <div class="text">Disfruta de nuestro agradable ambiente</div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/barra.jpg"
@@ -80,6 +103,7 @@
                 <div class="text">Prueba alguna de nuestras bebidas</div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/sala_reserva.jpg"
@@ -92,6 +116,7 @@
                 </div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/terraza.jpg"
@@ -102,6 +127,7 @@
                 <div class="text">Disfruta de nuestra terraza</div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/carro_de_bebidas.jpg"
@@ -112,6 +138,7 @@
                 <div class="text">Tenemos bebidas de todo tipo</div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/carne.jpg"
@@ -122,6 +149,7 @@
                 <div class="text">Prueba nuestras exquisitas carnes</div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/terraza_grande.jpg"
@@ -134,6 +162,7 @@
                 </div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/croquetas.jpg"
@@ -144,6 +173,7 @@
                 <div class="text">Comparte nuestros riquísimos entrantes</div>
               </div>
             </div>
+
             <div class="image-container">
               <img
                 src="/img/puerta principal.jpg"
@@ -156,14 +186,21 @@
             </div>
           </div>
         </main>
+
+        <!-- Footer de la página -->
         <footer>
+          <!-- Contenedor izquierdo del footer -->
           <div class="footer-left">
+            <!-- Parágrafo con el año actual y el nombre del restaurante -->
             <p>
               &copy; <span id="currentYear"></span> - Restaurante Pizzería
               Toscana
             </p>
           </div>
+
+          <!-- Contenedor derecho del footer -->
           <div class="footer-right">
+            <!-- Enlaces e iconos de las redes sociales -->
             <a
               href="https://www.facebook.com/ToscanaES/?locale=es_ES"
               target="_blank"

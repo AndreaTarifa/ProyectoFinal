@@ -4,45 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
     <title>Restaurante Toscana</title>
+    <!-- Favicon de la página -->
     <link rel="icon" type="image/x-icon" href="/img/logo1.png" />
+    <!-- Enlaces de la fuentes Roboto y Playfair Display  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/497015d351.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <!-- Enlace de los iconos de FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/497015d351.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Enlaces CSS del menu y los estilos generales -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Enlace al JavaScript de la página y el carrousel -->
+    <script defer src="js/script.js"></script>
+    <script defer src="js/slideshow.js"></script>
   </head>
 
   <body>
+    <!-- Cabecera de la página -->
     <header>
+      <!-- Contenedor del logo de la web con el enlace a la página principal -->
+
       <div class="logo">
         <a href="index.html"><img src="/img/logo.png" alt="Logo" /></a>
       </div>
+
+      <!-- Menú de navegación -->
       <nav>
+        <!-- Links de navegación de la página web en desktop -->
         <ul class="nav-links">
           <li><a href="html/carta.html">Carta</a></li>
           <li><a href="html/galeria.html">Galería</a></li>
           <li><a href="html/contacto.html">Contacto</a></li>
         </ul>
 
+        <!-- Contenedor del menú de navegación mobile -->
         <div class="container-menu-mobile">
+          <!-- Links de navegación de la página web en mobile -->
           <ul class="menu-mobile">
             <li><a href="html/carta.html">Carta</a></li>
             <li><a href="html/galeria.html">Galería</a></li>
             <li><a href="html/contacto.html">Contacto</a></li>
           </ul>
+
+          <!-- Botón para abrir o cerrar el menú de navegación mobile -->
           <button class="hamburger">
             <i class="menuIcon fa-solid fa-bars"></i>
             <i class="closeIcon fa-solid fa-xmark"></i>
@@ -50,14 +68,20 @@
         </div>
       </nav>
     </header>
+
+    <!-- Sección principal de la página -->
     <main>
+      <!-- Contenedor del carroousel -->
       <div class="slideshow-container">
+        <!-- Contenedor de la imagen -->
         <div class="slide fade">
           <img src="img/carne_a_la_brasa.jpg" alt="Plato de carne a la brasa" />
+          <!-- Información de la imagen -->
           <div class="image-info">
             <p>Aquí encontrarás las mejores carnes a la brasa!</p>
           </div>
         </div>
+
         <div class="slide fade">
           <img src="img/comedor.jpg" alt="Comedor principal del restaurante" />
           <div class="image-info">
@@ -67,6 +91,7 @@
             </p>
           </div>
         </div>
+
         <div class="slide fade">
           <img src="img/carro_de_bebidas.jpg" alt="Carro de bebidas" />
           <div class="image-info">
@@ -75,11 +100,17 @@
             </p>
           </div>
         </div>
+
+        <!-- Botones del carrousel para ir hacia delante o hacia atrás -->
         <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
         <button class="next" onclick="plusSlides(1)">&#10095;</button>
       </div>
+
+      <!-- Contenedor de la información de la sección sobre nosotros -->
       <div class="card about-us">
+        <!-- Título de la sección -->
         <h1>Sobre nosotros</h1>
+        <!-- Parrágrafos con la información del restaurante -->
         <p>
           Degusta los mejores platos de la gastronomía Italiana y Mediterránea
           en Restaurante Toscana.
@@ -97,13 +128,20 @@
         </p>
       </div>
     </main>
+
+    <!-- Footer de la página -->
     <footer>
+      <!-- Contenedor izquierdo del footer -->
       <div class="footer-left">
+        <!-- Parágrafo con el año actual y el nombre del restaurante -->
         <p>
           &copy; <span id="currentYear"></span> - Restaurante Pizzería Toscana
         </p>
       </div>
+
+      <!-- Contenedor derecho del footer -->
       <div class="footer-right">
+        <!-- Enlaces e iconos de las redes sociales -->
         <a
           href="https://www.facebook.com/ToscanaES/?locale=es_ES"
           target="_blank"
@@ -119,7 +157,5 @@
         ></a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/slideshow.js"></script>
   </body>
 </html>

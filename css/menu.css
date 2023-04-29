@@ -1,3 +1,5 @@
+/* Contenedor interior de la tarjeta de la carta donde se establece 
+la anchura y alineación de los elementos */
 .inner-card {
   width: 60%;
   display: flex;
@@ -6,6 +8,7 @@
   height: fit-content;
 }
 
+/* Imagen del contenedor interior */
 .inner-card img {
   width: 32.5%;
   object-fit: cover;
@@ -13,6 +16,8 @@
   border-radius: 4px;
 }
 
+/* Contenedor del apartado de la información de la imagen donde se 
+establece la separación y dirección de los elementos */
 .inner-card-info {
   display: flex;
   row-gap: 50px;
@@ -20,58 +25,73 @@
   width: 100%;
 }
 
+/* Contenedor de las filas de información que establece la separación entre filas y su dirección */
 .inner-card-info-list {
   display: flex;
   row-gap: 40px;
   flex-direction: column;
 }
 
+/* Fila de información donde se establece la alineación de los elementos */
 .inner-card-info-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Anchura de la descripción de la fila */
 .row-description {
   width: 100%;
 }
 
+/* Tamaño de letra y anchura de los elementos p dentro del contenedor de la fila */
 .inner-card-info-row p {
   font-size: 1.2rem;
   width: 90%;
 }
 
+/* Tamaño de letra y peso de la fuente de los elementos 
+span dentro del contenedor de la fila */
 .inner-card-info-row span {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
+/* Tamaño y peso de la letra del título de la sección */
 .inner-card-info h2 {
   font-size: 2rem;
   font-weight: bold;
 }
 
+/* Media query mobile */
 @media screen and (max-width: 480px) {
+  /* Cambia la anchura del contenedor interior de la tarjeta */
   .inner-card {
     width: 100%;
   }
 
+  /* Cambia la separación entre filas del contenedor de la información de la carta */
   .inner-card-info {
     row-gap: 30px;
   }
 
+  /* Cambia la separación de las filas de información */
   .inner-card-info-list {
     row-gap: 20px;
   }
 
+  /* Esconde las imagenes de la carta */
   .inner-card img {
     display: none;
   }
 
+  /* Cambia el tamaño de la fuente de los elementos span dentro de la fila de información */
   .inner-card-info-row span {
     font-size: 1.2rem;
   }
 
+  /* Cambia el tamaño de la fuente y la anchura de los 
+  elementos p dentro de la fila de información */
   .inner-card-info-row p {
     font-size: 1rem;
     width: 70%;

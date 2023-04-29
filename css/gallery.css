@@ -1,5 +1,6 @@
 /* IMAGES GALLERY */
 
+/* Contenedor grid para las imagenes de la galería */
 .grid-container {
   width: 80%;
   height: 100%;
@@ -9,11 +10,13 @@
   gap: 10px;
 }
 
+/* Contenedor de la imagen con una altura establecida y un posicionamiento relativo */
 .image-container {
   position: relative;
   height: 400px;
 }
 
+/* Clase de la imagen donde le da una altura, anchura y borde redondeado */
 .image {
   width: 100%;
   height: 100%;
@@ -21,6 +24,7 @@
   object-fit: cover;
 }
 
+/* Contenedor posicionado absolutamente con un color de fondo semi transparente para el texto de la imagen */
 .overlay {
   position: absolute;
   top: 0;
@@ -37,27 +41,29 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Hover del contenedor para mostrar el texto */
 .image-container:hover .overlay {
   opacity: 1;
 }
 
+/* Tamaño, color y alineación del texto para la imagen */
 .text {
   color: var(--white);
   font-size: 20px;
   text-align: center;
 }
 
+/* Media query para tablet */
 @media screen and (max-width: 768px) {
+  /* Contenedor grid pasa de tener tres filas a una */
   .grid-container {
     grid-template-columns: 1fr;
   }
 }
 
+/* Media query para mobile */
 @media screen and (max-width: 480px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
+  /* Cambia la altura del contenedor de la imagen */
   .image-container {
     height: 250px;
   }

@@ -1,9 +1,11 @@
+/* Variable de color */
 :root {
   --grayish: #222222;
 }
 
 /* CONTACT PAGE */
 
+/* Contenedor general de la sección de contacto con sombra, color de fondo blanco y bordes redondeados */
 .card-contact {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -12,12 +14,14 @@
   background-color: var(--white);
 }
 
+/* Contenedor interior de la sección de contacto con separación entre columnas */
 .inner-card-contact {
   display: flex;
   column-gap: 20px;
   width: 80vw;
 }
 
+/* Contenedor de la información de contacto con una separación entre filas */
 .contact-info {
   width: 30%;
   display: flex;
@@ -25,78 +29,96 @@
   flex-direction: column;
 }
 
-iframe {
-  width: 70%;
-  height: 500px;
-}
-
+/* Cambia le tamaño y el peso de la letra del título de la sección de contacto */
 .contact-info h2 {
   font-size: 2rem;
   font-weight: bold;
 }
 
+/* Fila de información de contacto dentro del contenedor */
 .contact-row {
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
 
+/* Cambia el tamaño y peso de la letra del título de la fila de información */
 .contact-row h3 {
   font-size: 1rem;
   font-weight: 600;
 }
 
+/* Contenedor de los iconos que le assigna una separación entre ellos */
 .icons {
   display: flex;
   column-gap: 10px;
 }
 
+/* Cambia el color de los enlaces de los iconos, si son visitados, activados o por defecto */
 .icons a,
 .icons a:active,
 .icons a:visited {
   color: var(--grayish);
 }
 
+/* Cambia el tamaño de los iconos */
 .icons a i {
   font-size: 24px;
 }
 
+/* Mapa de la sección de contacto */
+iframe {
+  width: 70%;
+  height: 500px;
+}
+
+/* Media query de desktop */
 @media screen and (max-width: 1200px) {
+  /* Cambia la anchura del contenedor */
   .contact-info {
     width: 45%;
   }
 
+  /* Cambia la anchura del mapa */
   iframe {
     width: 55%;
   }
 }
 
+/* Media query de tablet */
 @media screen and (max-width: 1024px) {
+  /* Cambia la anchura del contenedor */
   .contact-info {
     width: 40%;
   }
 
+  /* Cambia la anchura del mapa */
   iframe {
     width: 60%;
   }
 }
 
+/* Media query de mobile */
 @media screen and (max-width: 768px) {
+  /* Cambia la dirección y separación de los elementos */
   .inner-card-contact {
     flex-direction: column;
     row-gap: 20px;
   }
 
+  /* Cambia la anchura y separación de los elementos del contenedor de información */
   .contact-info {
     width: 100%;
     row-gap: 20px;
   }
 
+  /* Cambia la dirección y alineación de la fila de información */
   .contact-row {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  /* Cambia la anchura del mapa */
   iframe {
     width: 100%;
     height: 300px;

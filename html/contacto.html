@@ -10,47 +10,61 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Título de la página -->
         <title>Restaurante Toscana</title>
+        <!-- Favicon de la página -->
         <link rel="icon" type="image/x-icon" href="/img/logo1.png" />
+        <!-- Enlaces de la fuentes Roboto y Playfair Display  -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
           rel="stylesheet"
         />
-        <script
-          src="https://kit.fontawesome.com/497015d351.js"
-          crossorigin="anonymous"
-        ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
           rel="stylesheet"
         />
+        <!-- Enlace de los iconos de FontAwesome -->
+        <script
+          src="https://kit.fontawesome.com/497015d351.js"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Enlaces CSS del menu y los estilos de la sección de contacto -->
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/contact.css" />
+        <!-- Enlace al JavaScript de la página -->
         <script defer src="../js/script.js"></script>
       </head>
 
       <body>
+        <!-- Cabecera de la página -->
         <header>
+          <!-- Contenedor del logo de la web con el enlace a la página principal -->
           <div class="logo">
             <a href="../index.html"><img src="/img/logo.png" alt="Logo" /></a>
           </div>
+          <!-- Menú de navegación -->
           <nav>
+            <!-- Links de navegación de la página web en desktop -->
             <ul class="nav-links">
               <li><a href="carta.html">Carta</a></li>
               <li><a href="galeria.html">Galería</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
 
+            <!-- Contenedor del menú de navegación mobile -->
             <div class="container-menu-mobile">
+              <!-- Links de navegación de la página web en mobile -->
               <ul class="menu-mobile">
                 <li><a href="carta.html">Carta</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
               </ul>
+
+              <!-- Botón para abrir o cerrar el menú de navegación mobile -->
               <button class="hamburger">
                 <i class="menuIcon fa-solid fa-bars"></i>
                 <i class="closeIcon fa-solid fa-xmark"></i>
@@ -58,23 +72,33 @@
             </div>
           </nav>
         </header>
+
+        <!-- Sección principal de la página -->
         <main>
+          <!-- Contenedor general -->
           <div class="card-contact">
+            <!-- Contenedor de la información de contacto y el mapa -->
             <div class="inner-card-contact">
+              <!-- Contenedor de la información de contacto -->
               <div class="contact-info">
+                <!-- Título de la sección -->
                 <h2>Información</h2>
+                <!-- Fila de información -->
                 <div class="contact-row">
                   <h3>Horario:</h3>
                   <span>Lunes a domingo de 13:30 - 16:00 y 20:00 - 00:00</span>
                 </div>
+
                 <div class="contact-row">
                   <h3>Teléfono:</h3>
                   <span>950 33 39 18</span>
                 </div>
+
                 <div class="contact-row">
                   <h3>Correo electrónico:</h3>
                   <span>restaurantetoscana@hotmail.com</span>
                 </div>
+
                 <div class="contact-row">
                   <h3>Pedidos a domicílio:</h3>
                   <a href="https://toscanaespresso.es/" target="_blank"
@@ -82,6 +106,7 @@
                   >
                 </div>
                 <div class="contact-row">
+                  <!-- Iconos de las redes sociales -->
                   <div class="icons">
                     <a
                       href="https://www.facebook.com/ToscanaES/?locale=es_ES"
@@ -99,6 +124,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Iframe del mapa con la localización del restaurante -->
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.566436952026!2d-2.6227565232888725!3d36.732972672266285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd706f85cf3fe187%3A0x5f8d7c7d8c82c3e3!2sRestaurante%20Toscana%20-%20URBA!5e0!3m2!1ses!2ses!4v1681575410883!5m2!1ses!2ses"
                 allowfullscreen=""
@@ -108,14 +134,21 @@
             </div>
           </div>
         </main>
+
+        <!-- Footer de la página -->
         <footer>
+          <!-- Contenedor izquierdo del footer -->
           <div class="footer-left">
+            <!-- Parágrafo con el año actual y el nombre del restaurante -->
             <p>
               &copy; <span id="currentYear"></span> - Restaurante Pizzería
               Toscana
             </p>
           </div>
+
+          <!-- Contenedor derecho del footer -->
           <div class="footer-right">
+            <!-- Enlaces e iconos de las redes sociales -->
             <a
               href="https://www.facebook.com/ToscanaES/?locale=es_ES"
               target="_blank"
