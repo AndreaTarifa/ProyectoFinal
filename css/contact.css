@@ -92,6 +92,11 @@ iframe {
     row-gap: 20px;
   }
 
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   iframe {
     width: 100%;
     height: 300px;
