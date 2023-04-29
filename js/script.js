@@ -1,5 +1,5 @@
 /* Evento añadido al cargar la página para ejecutar el método de añadir el año del 
-copyright al footer i la función encargada del menú de navegación en versión mobile */
+copyright al footer y la función encargada del menú de navegación en versión mobile */
 window.addEventListener("load", () => {
   getYearCopy();
   initMobileMenu();
